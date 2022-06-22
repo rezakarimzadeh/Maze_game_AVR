@@ -1,0 +1,68 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+jump                                                                              0x0277       6
+lcd                                                                               0x027D      20
+str                                                                               0x0291      20
+w                                                                                 0x02A5       4
+time                                                                              0x02A9       4
+t1                                                                                0x02AD       4
+loop                                                                              0x02B1       2
+timing                                                                            0x02B3       2
+_seed                                                                             0x02B5       4
+_base_y                                                                           0x02B9       4
+_lcd_x                                                                            0x02BD       1
+_lcd_y                                                                            0x02BE       1
+_lcd_maxx                                                                         0x02BF       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R5           1
+j                                                                                 R4           1
+k                                                                                 R7           1
+t                                                                                 R6           1
+time2                                                                             R9           1
+x                                                                                 R8           1
+start                                                                             R11          1
+m                                                                                 R10          1
+time1                                                                             R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x000A2     15
+gameover                                                                          0x000B1     58
+difficulty                                                                        0x000EB     81
+chap                                                                              0x0013C     48
+ext_int0_isr                                                                      0x0016C     11
+ext_int1_isr                                                                      0x00177     23
+ext_int2_isr                                                                      0x0018E      5
+delay                                                                             0x00193     31
+timer0_ovf_isr                                                                    0x001B2     19
+main                                                                              0x001C5    194
+putchar                                                                           0x00287      7
+puts                                                                              0x0028E     13
+put_usart_G100                                                                    0x0029B     10
+put_buff_G100                                                                     0x002A5     58
+_print_G100                                                                       0x002DF    308
+sprintf                                                                           0x00413     46
+printf                                                                            0x00441     31
+ftoa                                                                              0x00460    201
+rand                                                                              0x00529     29
+_lcd_write_nibble_G102                                                            0x00546     20
+_lcd_write_data                                                                   0x0055A     12
+lcd_gotoxy                                                                        0x00566     17
+lcd_clear                                                                         0x00577     14
+lcd_putchar                                                                       0x00585     32
+lcd_puts                                                                          0x005A5     12
+lcd_init                                                                          0x005B1     47
+strcpyf                                                                           0x005E0     13
+strlen                                                                            0x005ED     12
+strlenf                                                                           0x005F9     13
+ftrunc                                                                            0x00606     49
+floor                                                                             0x00637     23
